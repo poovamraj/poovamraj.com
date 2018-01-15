@@ -77,11 +77,24 @@ h4.subtitle {
 
 .white-container {
   background-color: #FFF;
-  border-radius:0px 0px 15px 15px;
-  padding: 20px;
   text-align:center;
-  color:#333
+  padding:20px;
+  color:#ff5f52;
 }
+
+.white-container h3{
+	color:#666
+}
+
+
+.white-container-end {
+  background-color: #FFF;
+  border-radius:0px 0px 15px 15px;
+  text-align:center;
+  padding:20px;
+  color:#ff5f52;
+}
+
 
 .content-container {
   display:flex;
@@ -90,27 +103,97 @@ h4.subtitle {
 }
 
 .content-preview {
+	 position: relative;
   margin: 10px;
   border-radius:5px;
-  padding: 20px;
+  font-family:  sans-serif;
+  width: 30%;
   text-align:center;
-  background-color: #0F0;
-   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: #eee;
+  text-decoration: none;
+  font-weight:bold;
   color:#333;
   transition: 0.3s;
 }
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="content-preview"] {
+        width: 50%;
+    }
+}
+.content-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius:5px;
+}
 .content-preview:hover{
 	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.copyright {
-	font-size:14px
+.overlay {
+  position: absolute;
+  border-radius:5px;	
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff8982;
+}
+.content-preview-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+.content-preview:hover .overlay {
+  opacity: 0.9;
+}
+
+.copyright {
+	font-size:14px;
+	text-align:bottom;
+	color:FFF;
+}
+
+.divider {
+	height:10px;
+	width:100%;
+	background-color:#FFF;
+	padding:20px 0px;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+.page-footer {
+	background:#DF696E;
+	color:#FFF;
+	width:100%;
+	margin-top:20px;
+	padding:10px 0px;
+	text-align:center;
+}
 
 /*
-* Remove text-shadow in selection highlight:
+* Remove text-shadow in selection highlight
 * https://twitter.com/miketaylr/status/12228805301
 *
 * Vendor-prefixed and regular ::selection selectors cannot be combined:
