@@ -14,12 +14,13 @@ const Header = () => (
       style={{
         margin: '0 auto',
         maxWidth: 1150,
-        padding: '1.45rem 1.0875rem',
+        padding: '1.0rem 1.0875rem',
       }}
     >
 
       <Logo />
-      <div style={{color:Constants.THEME_MINOR_COLOR,fontFamily:Constants.THEME_MINOR_FONT,fontSize:15}}>POOVAMRAJ T T - Developer</div>
+      <div style={{color:Constants.THEME_MINOR_COLOR,fontFamily:Constants.THEME_MINOR_FONT,fontSize:'1rem'}}>
+      POOVAMRAJ T T - Developer</div>
       
     </div>
   </div>

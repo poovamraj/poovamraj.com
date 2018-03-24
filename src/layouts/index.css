@@ -13,13 +13,13 @@ html {
 }
 
 @font-face {
-  font-family: 'redring';
-  src: url('../../public/static/fonts/redring/redring_1969_v03-webfont.woff2') format('woff2'),
-       url('../../public/static/fonts/redring/redring_1969_v03-webfont.woff') format('woff');
+  font-family: 'elkwood';
+  src: url('../../public/static/fonts/elkwood/elkwood_-_free-webfont.woff2') format('woff2'),
+       url('../../public/static/fonts/elkwood/elkwood_-_free-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
 
 body {
   margin: 0;

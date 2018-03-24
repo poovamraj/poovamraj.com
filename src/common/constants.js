@@ -3,7 +3,7 @@ const Constants = {
     THEME_MINOR_COLOR : "#000000",
 
     THEME_MAJOR_FONT : "redring",
-    THEME_MINOR_FONT : "passionsans"
+    THEME_MINOR_FONT : "elkwood"
 }
 
 export default Constants

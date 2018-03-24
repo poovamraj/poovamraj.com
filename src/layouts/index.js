@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 class Template extends React.Component {
@@ -40,13 +41,13 @@ class Template extends React.Component {
           style={{
             margin: '0 auto',
             maxWidth: 1150,
-            padding: '0px 1.0875rem 1.45rem',
+            padding: '1.0875rem 1.45rem',
             paddingTop: 0,
           }}>
-
           {this.props.children()}
-
         </div>
+        
+        <Footer />
       </div>
     )
   }
