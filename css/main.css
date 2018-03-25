@@ -176,6 +176,8 @@ h4.subtitle {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+  margin-top:1rem;
+  margin-bottom:1rem;
   }
 
   main {
