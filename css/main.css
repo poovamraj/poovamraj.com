@@ -10,11 +10,20 @@
 Base styles: opinionated defaults
 ========================================================================== */
 
+@font-face {
+  font-family: 'elkwood';
+  src: url('../fonts/elkwood_-_free-webfont.woff2') format('woff2'),
+       url('../fonts/elkwood_-_free-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html {
   color: #222;
-  font-size: 1em;
   line-height: 1.4;
-  background-color: #ff8982
+  background-color: #ff8982;
+  font-family:elkwood;
 }
 
 .avatar{
@@ -39,6 +48,12 @@ html {
     [class*="card"] {
         margin: 2% 5%;
     }
+	[class*="floating-button"]{
+		display:none;
+	}
+	[class*="content-preview"] {
+        width: 50%;
+    }
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -56,8 +71,7 @@ html {
 
 h1.title {
   text-align: center;
-  font-size: 3em;
-  font-family:  sans-serif;
+  font-size: 3.5em;
   font-weight: bolder;
   padding: 0.1%;
   font-style: normal;
@@ -67,8 +81,7 @@ h1.title {
 
 h4.subtitle {
   text-align: center;
-  font-family:  sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
   font-style: normal;
   font-variant: normal;
   display: inline-block;
@@ -79,6 +92,7 @@ h4.subtitle {
   background-color: #FFF;
   text-align:center;
   padding:20px;
+  font-size:1.3em;
   color:#ff5f52;
 }
 
@@ -106,7 +120,6 @@ h4.subtitle {
 	 position: relative;
   margin: 10px;
   border-radius:5px;
-  font-family:  sans-serif;
   width: 30%;
   text-align:center;
   background-color: #eee;
@@ -115,12 +128,7 @@ h4.subtitle {
   color:#333;
   transition: 0.3s;
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="content-preview"] {
-        width: 50%;
-    }
-}
+
 .content-preview-image {
   display: block;
   width: 100%;
@@ -194,6 +202,28 @@ h4.subtitle {
 	text-align:center;
 }
 
+.floating-button {
+	position: fixed;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	background-color: #FF5555;
+	height: 4rem;
+	width: 4rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  border-radius: 50%;
+  
+  transition: 0.3s;
+}
+
+.floating-button:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.icon{
+	width:2rem;
+	height:2rem;
+	margin:1rem;
+}
 /*
 * Remove text-shadow in selection highlight
 * https://twitter.com/miketaylr/status/12228805301
