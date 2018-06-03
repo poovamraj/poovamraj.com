@@ -51,6 +51,9 @@ html {
 	[class*="floating-button"]{
 		display:none;
 	}
+	[class*="canvas"]{
+		display:none;
+	}
 	[class*="content-preview"] {
         width: 50%;
     }
